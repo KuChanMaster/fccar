@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: it-fccar-service-driver  #it-fccar-service-driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 #自动取pom中的addr  ;
+        namespace: fccar-dev #自动取pom中的namespace
+        username: nacos
+        password: nacos
+      config:
+        server-addr: 127.0.0.1:8848 #自动取pom中的addr  ;
+        namespace: fccar-dev #自动取pom中的namespace
+        username: nacos
+        password: nacos
+        name: it-fccar-service-driver  #it-fccar-service-driver
+        file-extension: yaml
+        shared-configs: #公共配置
+          - data-id: it-fccar-share.yaml

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/it-fccar/it-fccar-basic/it-fccar-codegen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/it-fccar/it-fccar-basic/it-fccar-commom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/it-fccar/it-fccar-basic/it-fccar-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/it-fccar/it-fccar-basic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/it-fccar/it-fccar-service/it-fccar-service-driver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/it-fccar/it-fccar-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/it-fccar/it-fccar-support/it-fccar-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/it-fccar/it-fccar-support/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/it-fccar/src/main/java" charset="UTF-8" />
+  </component>
+</project>

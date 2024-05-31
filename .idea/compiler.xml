@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+      <profile name="Annotation profile for it-fccar" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/springframework/boot/spring-boot-configuration-processor/2.6.13/spring-boot-configuration-processor-2.6.13.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/springframework/boot/spring-boot-configuration-processor/2.6.13/spring-boot-configuration-processor-2.6.13.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="it-fccar-codegen" />
+        <module name="it-fccar-service-driver" />
+        <module name="it-fccar-gateway" />
+        <module name="it-fccar-service" />
+      </profile>
+      <profile name="Annotation profile for it-fccar-common" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/springframework/boot/spring-boot-configuration-processor/2.6.13/spring-boot-configuration-processor-2.6.13.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../../../../ProgramFiles/apache-maven-3.5.4/maven-repository/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="it-fccar-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="it-fccar-commom" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="it-fccar-basic" options="" />
+      <module name="it-fccar-codegen" options="-parameters" />
+      <module name="it-fccar-commom" options="" />
+      <module name="it-fccar-common" options="-parameters" />
+      <module name="it-fccar-gateway" options="-parameters" />
+      <module name="it-fccar-service" options="-parameters" />
+      <module name="it-fccar-service-driver" options="-parameters" />
+      <module name="it-fccar-support" options="" />
+    </option>
+  </component>
+</project>
