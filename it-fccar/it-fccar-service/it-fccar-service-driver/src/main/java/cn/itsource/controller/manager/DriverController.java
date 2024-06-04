@@ -17,7 +17,7 @@ import cn.itsource.result.PageResult;
 @Tag(name = "司机对象",description = "司机对象")
 @RestController
 @RequestMapping("/manager/driver")
-public class DriverController{
+public class DriverController extends RuntimeException{
 
     @Autowired
     public IDriverService driverService;
@@ -28,14 +28,12 @@ public class DriverController{
     public JSONResult save(@RequestBody @Valid Driver driver){
         return JSONResult.success(driverService.save(driver));
     }
-
     @Operation( summary= "修改Driver",description = "基础对象修改接口")
     @Parameter(name = "driver",description = "修改的对象",required = true)
     @PutMapping
     public JSONResult update(@RequestBody  @Valid Driver driver){
         return JSONResult.success(driverService.updateById(driver));
     }
-
     //删除对象
     @Operation( summary= "删除Driver",description = "基础对象删除接口，采用状态删除")
     @Parameter(name = "id",description = "删除的对象ID",required = true)
@@ -78,5 +76,6 @@ public class DriverController{
         //返回结果
         return JSONResult.success(new PageResult<Driver>(page.getTotal(),page.getRecords()));
     }
+
 
 }

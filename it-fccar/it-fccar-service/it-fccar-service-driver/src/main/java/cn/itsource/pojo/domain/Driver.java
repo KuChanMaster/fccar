@@ -1,18 +1,16 @@
 package cn.itsource.pojo.domain;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
-import java.util.Date;
-import com.baomidou.mybatisplus.annotation.Version;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.baomidou.mybatisplus.annotation.TableField;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.*;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
-import com.fasterxml.jackson.annotation.JsonFormat;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import java.io.Serializable;
+import java.util.Date;
 
 
 /**
@@ -35,10 +33,11 @@ public class Driver implements Serializable {
     @Schema(name = "id", description = "同loginId")
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     @TableId(value = "id", type = IdType.ASSIGN_ID)
-    private Long id;
+    private Long id;//id=1728661876512002048
 
     @Schema(name = "phone", description = "电话")
     @TableField("phone")
+    @NotEmpty(message = "手机号不能为空")//
     private String phone;
 
     @Schema(name = "homeAddress", description = "居住地址")
@@ -81,6 +80,7 @@ public class Driver implements Serializable {
 
     @Schema(name = "bitState", description = "位状态")
     @TableField("bit_state")
+    @NotNull(message = "状态不能为空")
     private Long bitState;
 
 }

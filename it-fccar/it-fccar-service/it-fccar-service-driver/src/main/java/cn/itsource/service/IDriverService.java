@@ -12,5 +12,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2024-05-31
  */
 public interface IDriverService extends IService<Driver> {
-
+    Object register(String code);
 }

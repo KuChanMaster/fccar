@@ -1,4 +1,7 @@
 spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER # 解决 SpringFox 与 SpringBoot 2.6.x 不兼容的问题，参见 SpringFoxHandlerProviderBeanPostProcessor 类
   application:
     name: it-fccar-service-driver  #it-fccar-service-driver
   cloud:
@@ -17,3 +20,22 @@ spring:
         file-extension: yaml
         shared-configs: #公共配置
           - data-id: it-fccar-share.yaml
+# springdoc-openapi项目配置
+springdoc:
+  swagger-ui:
+    path: /doc.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs/default
+
+# knife4j的增强配置，不需要增强可以不配
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    swagger-model-name: 飞驰专车
+  basic:
+    enable: true
+    username: fccar
+    password: fccar
